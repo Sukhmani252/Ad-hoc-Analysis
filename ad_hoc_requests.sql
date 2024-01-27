@@ -118,7 +118,7 @@ SELECT
             WHEN MONTH(date) IN (12,1,2) THEN 'Q2'
             WHEN MONTH(date) IN (3,4,5) THEN 'Q3'
             ELSE 'Q4'
-	   END AS Quarter,
+       END AS Quarter,
        SUM(sold_quantity) AS total_sold_quantity
 FROM gdb023.fact_sales_monthly
 WHERE fiscal_year = 2020
